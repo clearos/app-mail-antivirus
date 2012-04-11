@@ -1,7 +1,7 @@
 
 Name: app-mail-antivirus
 Epoch: 1
-Version: 1.0.5
+Version: 1.0.10
 Release: 1%{dist}
 Summary: Mail Antivirus
 License: GPLv3
@@ -12,7 +12,7 @@ Requires: %{name}-core = 1:%{version}-%{release}
 Requires: app-base
 
 %description
-Mail Antivirus description...
+An open-source antivirus and antimalware scanner for the SMTP Mail Server app. This app will scan mail during messaging handling and perform functions defined by rules configured by the administrator.
 
 %package core
 Summary: Mail Antivirus - APIs and install
@@ -22,7 +22,7 @@ Requires: app-base-core
 Requires: app-mail-filter-core
 
 %description core
-Mail Antivirus description...
+An open-source antivirus and antimalware scanner for the SMTP Mail Server app. This app will scan mail during messaging handling and perform functions defined by rules configured by the administrator.
 
 This package provides the core API and libraries.
 

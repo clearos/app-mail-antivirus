@@ -5,7 +5,7 @@
 /////////////////////////////////////////////////////////////////////////////
 
 $app['basename'] = 'mail_antivirus';
-$app['version'] = '1.0.5';
+$app['version'] = '1.0.10';
 $app['release'] = '1';
 $app['vendor'] = 'ClearFoundation';
 $app['packager'] = 'ClearFoundation';
@@ -20,16 +20,6 @@ $app['description'] = lang('mail_antivirus_app_description');
 $app['name'] = lang('mail_antivirus_app_name');
 $app['category'] = lang('base_category_server');
 $app['subcategory'] = lang('base_subcategory_mail');
-
-/////////////////////////////////////////////////////////////////////////////
-// Controllers
-/////////////////////////////////////////////////////////////////////////////
-
-/*
-$app['controllers']['smtp']['title'] = lang('smtp_app_name');
-$app['controllers']['general']['title'] = lang('base_general_settings');
-$app['controllers']['trusted']['title'] = lang('smtp_trusted_networks');
-*/
 
 /////////////////////////////////////////////////////////////////////////////
 // Packaging
