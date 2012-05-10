@@ -50,7 +50,7 @@ if ($form_mode === 'edit') {
     $read_only = TRUE;
     $buttons = array(
         anchor_edit('/app/mail_antivirus/policy/edit'),
-        anchor_custom('/app/antivirus', lang('mail_antivirus_global_av_settings'))
+        anchor_custom('/app/antivirus', lang('mail_antivirus_modify_gateway_antivirus_settings'))
     );
 }
 

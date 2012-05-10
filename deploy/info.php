@@ -5,7 +5,7 @@
 /////////////////////////////////////////////////////////////////////////////
 
 $app['basename'] = 'mail_antivirus';
-$app['version'] = '1.0.10';
+$app['version'] = '1.1.2';
 $app['release'] = '1';
 $app['vendor'] = 'ClearFoundation';
 $app['packager'] = 'ClearFoundation';
@@ -25,6 +25,12 @@ $app['subcategory'] = lang('base_subcategory_mail');
 // Packaging
 /////////////////////////////////////////////////////////////////////////////
 
+$app['requires'] = array(
+    'app-antivirus',
+);
+
 $app['core_requires'] = array(
+    'app-antivirus-core',
     'app-mail-filter-core',
+    'app-smtp-core',
 );

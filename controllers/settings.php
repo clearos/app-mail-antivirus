@@ -63,6 +63,6 @@ class Settings extends ClearOS_Controller
         // Load views
         //-----------
 
-        $this->page->view_form('mail_antivirus/settings', $data, lang('mail_antivirus_app_name'));
+        $this->page->view_form('mail_antivirus/settings', NULL, lang('mail_antivirus_app_name'));
     }
 }

@@ -93,6 +93,7 @@ class Policy extends ClearOS_Controller
         // Load libraries
         //---------------
 
+        $this->lang->load('mail_antivirus');
         $this->load->library('mail_filter/Amavis');
 
         // Set validation rules
@@ -109,6 +110,7 @@ class Policy extends ClearOS_Controller
                 $this->amavis->set_antivirus_policy($this->input->post('virus_detect'));
                 $this->amavis->set_bad_header_policy($this->input->post('bad_header'));
                 $this->amavis->set_banned_policy($this->input->post('banned_extension'));
+                $this->amavis->reset(TRUE);
 
                 $this->page->set_status_updated();
             } catch (Engine_Exception $e) {
@@ -136,6 +138,6 @@ class Policy extends ClearOS_Controller
         // Load views
         //-----------
 
-        $this->page->view_form('mail_antivirus', $data, lang('mail_antivirus_app_name'));
+        $this->page->view_form('mail_antivirus', $data, lang('mail_antivirus_mail_policies'));
     }
 }

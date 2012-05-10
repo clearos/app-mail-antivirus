@@ -1,7 +1,7 @@
 
 Name: app-mail-antivirus
 Epoch: 1
-Version: 1.0.10
+Version: 1.1.2
 Release: 1%{dist}
 Summary: Mail Antivirus
 License: GPLv3
@@ -10,16 +10,19 @@ Source: %{name}-%{version}.tar.gz
 Buildarch: noarch
 Requires: %{name}-core = 1:%{version}-%{release}
 Requires: app-base
+Requires: app-antivirus
 
 %description
 An open-source antivirus and antimalware scanner for the SMTP Mail Server app. This app will scan mail during messaging handling and perform functions defined by rules configured by the administrator.
 
 %package core
-Summary: Mail Antivirus - APIs and install
+Summary: Mail Antivirus - Core
 License: LGPLv3
 Group: ClearOS/Libraries
 Requires: app-base-core
+Requires: app-antivirus-core
 Requires: app-mail-filter-core
+Requires: app-smtp-core
 
 %description core
 An open-source antivirus and antimalware scanner for the SMTP Mail Server app. This app will scan mail during messaging handling and perform functions defined by rules configured by the administrator.
