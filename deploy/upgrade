@@ -1,0 +1,8 @@
+#!/bin/sh
+
+if ! /usr/bin/id -n -G amavis | grep -q "\<clam\>"; then
+    /usr/sbin/usermod -G $(id -Gn clam | tr ' ' ','),amavis clam >/dev/null 2>&1
+    /sbin/service clamd condrestart >/dev/null 2>&1
+fi
+
+exit 0
