@@ -3,9 +3,9 @@
 /**
  * Policy controller.
  *
- * @category   Apps
- * @package    Mail_Antivirus
- * @subpackage Controllers
+ * @category   apps
+ * @package    mail-antivirus
+ * @subpackage controllers
  * @author     ClearFoundation <developer@clearfoundation.com>
  * @copyright  2011 ClearFoundation
  * @license    http://www.gnu.org/copyleft/gpl.html GNU General Public License version 3 or later
@@ -36,9 +36,9 @@
 /**
  * Banned Extensions controller.
  *
- * @category   Apps
- * @package    Mail_Antivirus
- * @subpackage Controllers
+ * @category   apps
+ * @package    mail-antivirus
+ * @subpackage controllers
  * @author     ClearFoundation <developer@clearfoundation.com>
  * @copyright  2011 ClearFoundation
  * @license    http://www.gnu.org/copyleft/gpl.html GNU General Public License version 3 or later
