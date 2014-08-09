@@ -32,6 +32,6 @@ $app['requires'] = array(
 $app['core_requires'] = array(
     'amavisd-new',
     'app-antivirus-core',
-    'app-mail-filter-core',
+    'app-mail-filter-core >= 1:1.6.5',
     'app-smtp-core',
 );

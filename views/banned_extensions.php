@@ -80,7 +80,7 @@ foreach ($extensions as $extension => $entry) {
 echo form_open('mail_antivirus/banned_extensions');
 
 echo list_table(
-    lang('mail_antivirus_banned_file_extensions'),
+    lang('mail_filter_banned_file_extensions'),
     $buttons,
     $headers,
     $items,

@@ -59,6 +59,7 @@ class Banned_Extensions extends ClearOS_Controller
         //---------------
 
         $this->lang->load('mail_antivirus');
+        $this->lang->load('mail_filter');
         $this->load->library('mail_filter/Amavis');
 
         // Handle form submit
@@ -91,6 +92,6 @@ class Banned_Extensions extends ClearOS_Controller
         // Load views
         //-----------
 
-        $this->page->view_form('banned_extensions', $data, lang('mail_antivirus_banned_file_extensions'));
+        $this->page->view_form('banned_extensions', $data, lang('mail_filter_banned_file_extensions'));
     }
 }

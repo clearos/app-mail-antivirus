@@ -35,13 +35,14 @@
 
 $this->lang->load('base');
 $this->lang->load('mail_antivirus');
+$this->lang->load('mail_filter');
 
 ///////////////////////////////////////////////////////////////////////////////
 // Items
 ///////////////////////////////////////////////////////////////////////////////
 
 $anchor = anchor_edit('/app/mail_antivirus/banned_extensions', 'high');
-$items['banned_extensions']['title'] = lang('mail_antivirus_banned_file_extensions');
+$items['banned_extensions']['title'] = lang('mail_filter_banned_file_extensions');
 $items['banned_extensions']['action'] = $anchor;
 $items['banned_extensions']['anchors'] = array($anchor);
 

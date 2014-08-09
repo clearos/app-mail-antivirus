@@ -34,6 +34,7 @@
 ///////////////////////////////////////////////////////////////////////////////
 
 $this->lang->load('mail_antivirus');
+$this->lang->load('mail_filter');
 $this->lang->load('base');
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -61,9 +62,9 @@ if ($form_mode === 'edit') {
 echo form_open('mail_antivirus');
 echo form_header(lang('mail_antivirus_mail_policies'));
 
-echo field_dropdown('virus_detect', $virus_detect_options, $virus_detect, lang('mail_antivirus_virus_detect_policy'), $read_only);
-echo field_dropdown('bad_header', $bad_header_options, $bad_header, lang('mail_antivirus_bad_header_policy'), $read_only);
-echo field_dropdown('banned_extension', $banned_extensions_options, $banned_extensions, lang('mail_antivirus_banned_extension_policy'), $read_only);
+echo field_dropdown('virus_detect', $virus_detect_options, $virus_detect, lang('mail_filter_virus_detected_policy'), $read_only);
+echo field_dropdown('bad_header', $bad_header_options, $bad_header, lang('mail_filter_bad_header_policy'), $read_only);
+echo field_dropdown('banned_extension', $banned_extensions_options, $banned_extensions, lang('mail_filter_banned_file_extension_policy'), $read_only);
 
 echo field_button_set($buttons);
 
