@@ -1,7 +1,7 @@
 
 Name: app-mail-antivirus
 Epoch: 1
-Version: 1.2.2
+Version: 1.6.5
 Release: 1%{dist}
 Summary: Mail Antivirus
 License: GPLv3
@@ -13,7 +13,7 @@ Requires: app-base
 Requires: app-antivirus
 
 %description
-An open-source antivirus and antimalware scanner for the SMTP Mail Server app. This app will scan mail during messaging handling and perform functions defined by rules configured by the administrator.
+An open-source antivirus and antimalware scanner for mail servers.
 
 %package core
 Summary: Mail Antivirus - Core
@@ -26,7 +26,7 @@ Requires: app-mail-filter-core
 Requires: app-smtp-core
 
 %description core
-An open-source antivirus and antimalware scanner for the SMTP Mail Server app. This app will scan mail during messaging handling and perform functions defined by rules configured by the administrator.
+An open-source antivirus and antimalware scanner for mail servers.
 
 This package provides the core API and libraries.
 
@@ -75,8 +75,6 @@ exit 0
 %files core
 %defattr(-,root,root)
 %exclude /usr/clearos/apps/mail_antivirus/packaging
-%exclude /usr/clearos/apps/mail_antivirus/tests
 %dir /usr/clearos/apps/mail_antivirus
 /usr/clearos/apps/mail_antivirus/deploy
 /usr/clearos/apps/mail_antivirus/language
-/usr/clearos/apps/mail_antivirus/libraries
