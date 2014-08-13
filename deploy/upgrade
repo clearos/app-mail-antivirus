@@ -1,6 +1,7 @@
 #!/bin/sh
 
 if ! /usr/bin/id -n -G amavis | grep -q "\<clam\>"; then
+    logger -p local6.notice -t installer "app-mail-antivirus-core - updating Amavis/ClamAV permissions"
     /usr/sbin/usermod -G $(id -Gn clam | tr ' ' ','),amavis clam >/dev/null 2>&1
     /sbin/service clamd condrestart >/dev/null 2>&1
 fi
