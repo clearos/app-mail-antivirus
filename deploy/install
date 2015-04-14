@@ -64,5 +64,5 @@ try {
     $amavis->set_running_state(TRUE);
     $amavis->set_boot_state(TRUE);
 } catch (Exception $e) {
-    clearos_log(clearos_exception_message($e));
+    clearos_log('app-mail-antivirus-core', clearos_exception_message($e));
 }
