@@ -5,7 +5,7 @@
 /////////////////////////////////////////////////////////////////////////////
 
 $app['basename'] = 'mail_antivirus';
-$app['version'] = '2.0.18';
+$app['version'] = '2.0.24';
 $app['release'] = '1';
 $app['vendor'] = 'ClearFoundation';
 $app['packager'] = 'ClearFoundation';
@@ -34,4 +34,8 @@ $app['core_requires'] = array(
     'app-antivirus-core',
     'app-mail-filter-core >= 1:1.6.5',
     'app-smtp-core',
+);
+
+$app['delete_dependency'] = array(
+    'app-mail-antivirus-core',
 );
